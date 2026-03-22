@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume — Emma Xuan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">✿ Emma Xuan</a>
+    <ul class="nav-links">
+      <li><a href="index.html">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="projects.html">projects</a></li>
+      <li><a href="goals.html">goals</a></li>
+      <li><a href="resume.html">resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="page-hero">
+    <p class="label">credentials</p>
+    <h1 class="page-title">My <em>Resume</em></h1>
+  </div>
+
+  <div class="resume-layout">
+    <div class="resume-top">
+      <p style="font-size:0.875rem; color:var(--text-muted); font-weight:300;">Two versions — pick the one relevant to the role.</p>
+      <div class="resume-tabs-row">
+        <button class="rtab" data-target="pane-cyber">Cybersecurity</button>
+        <button class="rtab" data-target="pane-cs">General CS / SWE</button>
+      </div>
+    </div>
+
+    <!-- CYBER -->
+    <div id="pane-cyber" class="resume-pane">
+      <div class="r-download-bar">
+        <p>Download the full one-page PDF for applications.</p>
+        <!--
+          Place your PDF at downloads/Emma_Xuan_Cyber_Resume.pdf then uncomment:
+          <a href="downloads/Emma_Xuan_Cyber_Resume.pdf" class="btn btn-blush" download>↓ Download PDF</a>
+        -->
+        <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);">Add PDF to downloads/ to enable</span>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Education</div>
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Georgia Institute of Technology</span><span class="r-entry-date">Anticipated Fall 2027</span></div>
+          <div class="r-entry-sub">B.S. Computer Engineering · GPA: 3.71 / 4.00 · Faculty Honors, Dean's List</div>
+        </div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Skills</div>
+        <div class="r-skills-line"><strong>Programming:</strong> C, C++, x86 Assembly, RISC-V Assembly, Python, Java, Bash, HTML</div>
+        <div class="r-skills-line"><strong>Security Tools:</strong> IDA Pro, static binary analysis, reverse engineering, malware analysis</div>
+        <div class="r-skills-line"><strong>Software / OS:</strong> Linux, macOS, Windows</div>
+        <div class="r-skills-line"><strong>Dev Tools:</strong> Git, AWS, VS Code, GitHub Copilot</div>
+        <div class="r-skills-line"><strong>Hardware:</strong> Embedded Systems, PCB Design, Digital Logic, Circuit Analysis</div>
+        <div class="r-skills-line"><strong>Languages:</strong> English, Mandarin Chinese, French</div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Projects</div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Malware Reverse Engineering</span><span class="r-entry-date">Ongoing</span></div>
+          <div class="r-entry-sub">IDA Pro, x86 Assembly</div>
+          <ul class="r-bullets">
+            <li>Reverse engineered 3+ malware samples including W32.SQLSlammer, Michelangelo, and DOS7 using IDA Pro, annotating x86 assembly line-by-line to document exploit logic and control flow</li>
+            <li>Analyzed buffer overflow exploit chains, null-free shellcode construction, runtime API resolution via PEB traversal, and stack exploitation using jmp esp gadgets</li>
+            <li>Documented UDP-based worm propagation mechanics and memory corruption vulnerabilities across multiple virus families</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">basil — Smart Pantry Web App</span><span class="r-entry-date">September 2025</span></div>
+          <div class="r-entry-sub">React, Flask, SQLite, SQLAlchemy, AWS Cognito, OpenAI API</div>
+          <ul class="r-bullets">
+            <li>Architected the backend for a full-stack pantry management app, parsing 8,000+ USDA food database entries from raw CSV into a queryable SQLite schema</li>
+            <li>Engineered a custom OpenAI/Mosaic client with structured JSON prompts for inventory-aware recipe generation with accurate nutritional macros</li>
+            <li>Implemented Amazon Cognito authentication including refresh token handling and session expiry edge case management</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Embedded Video Game — ARM Mbed (Nine Lives)</span><span class="r-entry-date">November 2025</span></div>
+          <div class="r-entry-sub">C, C++, ARM Assembly</div>
+          <ul class="r-bullets">
+            <li>Built a real-time 2D cave exploration game on ARM Mbed within a deterministic game loop</li>
+            <li>Implemented a tile-based map system backed by a custom hash table with random item spawning and smart enemy AI</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">500g SumoBot (Celebi) — RoboJackets</span><span class="r-entry-date">August 2024 – Present</span></div>
+          <div class="r-entry-sub">C++, PCB Design, CAD/CAM</div>
+          <ul class="r-bullets">
+            <li>Designed, programmed, and manufactured a competition robot with sub-millisecond sensor-driven control loops and a custom PCB</li>
+            <li>Placed 3rd in competition across hundreds of live matches</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Experience</div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Georgia Tech Greyhat — Cybersecurity Club</span><span class="r-entry-date">August 2025 – Present</span></div>
+          <div class="r-entry-sub">Member · Atlanta, GA</div>
+          <ul class="r-bullets">
+            <li>Studied malware reverse engineering and binary analysis using IDA Pro across multiple virus families including worms, boot sector viruses, and network exploits</li>
+            <li>Attended workshops on web exploitation, ethical hacking, and penetration testing</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">RoboJackets Robowrestling</span><span class="r-entry-date">August 2024 – Present</span></div>
+          <div class="r-entry-sub">Active Member · Atlanta, GA</div>
+          <ul class="r-bullets">
+            <li>Member of Georgia Tech's competitive robotics organization contributing to hardware design, firmware development, and competition strategy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CS / SWE -->
+    <div id="pane-cs" class="resume-pane">
+      <div class="r-download-bar">
+        <p>Download the full one-page PDF for applications.</p>
+        <!--
+          Place your PDF at downloads/Emma_Xuan_CS_Resume.pdf then uncomment:
+          <a href="downloads/Emma_Xuan_CS_Resume.pdf" class="btn btn-blush" download>↓ Download PDF</a>
+        -->
+        <span style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);">Add PDF to downloads/ to enable</span>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Education</div>
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Georgia Institute of Technology</span><span class="r-entry-date">Anticipated Fall 2027</span></div>
+          <div class="r-entry-sub">B.S. Computer Engineering · GPA: 3.71 / 4.00 · Faculty Honors, Dean's List</div>
+        </div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Skills</div>
+        <div class="r-skills-line"><strong>Programming:</strong> Java, Python, C, C++, RISC-V Assembly, Bash, HTML</div>
+        <div class="r-skills-line"><strong>Frameworks &amp; Tools:</strong> React, Flask, SQLite, SQLAlchemy, AWS Cognito, OpenAI API, Unity</div>
+        <div class="r-skills-line"><strong>Software / OS:</strong> Linux, macOS, Windows</div>
+        <div class="r-skills-line"><strong>Dev Tools:</strong> Git, AWS, VS Code, IntelliJ IDEA, GitHub Copilot</div>
+        <div class="r-skills-line"><strong>Hardware:</strong> Embedded Systems, PCB Design, Digital Logic, Circuit Analysis</div>
+        <div class="r-skills-line"><strong>Languages:</strong> English, Mandarin Chinese, French</div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Projects</div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">basil — Smart Pantry Web App</span><span class="r-entry-date">September 2025</span></div>
+          <div class="r-entry-sub">React, Flask, SQLite, SQLAlchemy, AWS Cognito, OpenAI API</div>
+          <ul class="r-bullets">
+            <li>Architected the backend for a full-stack pantry management app, parsing 8,000+ USDA food database entries from raw CSV into a queryable SQLite/SQLAlchemy schema</li>
+            <li>Engineered a custom OpenAI/Mosaic client with structured JSON prompts forcing JSON-formatted nutritional output for inventory-aware recipe generation with accurate macros</li>
+            <li>Implemented Amazon Cognito authentication with refresh token handling and session expiry edge cases; collaborated on React frontend for inventory and recipe management</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Mood Tracker — Personal Wellness Web App</span><span class="r-entry-date">2024</span></div>
+          <div class="r-entry-sub">Python, Flask, HTML/CSS</div>
+          <ul class="r-bullets">
+            <li>Designed and deployed a solo full-stack mood tracking app with personalized heatmap visualization, hobby-integrated daily logging, and a journaling system</li>
+            <li>Built session-based user authentication and self-hosted on a live server</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Embedded Video Game — ARM Mbed (Nine Lives)</span><span class="r-entry-date">November 2025</span></div>
+          <div class="r-entry-sub">C, C++, ARM Assembly</div>
+          <ul class="r-bullets">
+            <li>Built a real-time 2D cave exploration game on ARM Mbed within a deterministic game loop</li>
+            <li>Implemented a tile-based map system backed by a custom hash table with random item spawning, smart enemy behavior, and score progression</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">ShiftScape — VGDev</span><span class="r-entry-date">Fall 2024</span></div>
+          <div class="r-entry-sub">C#, Unity</div>
+          <ul class="r-bullets">
+            <li>Contributed to a team Unity puzzle game featuring dynamic tile mechanics that spatially transform the board as the player navigates</li>
+            <li>Implemented multiple tile types with distinct behavioral logic: trigger, environmental, and transformation effects</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="r-section">
+        <div class="r-section-title">Experience</div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">RoboJackets Robowrestling — 3rd Place 500g SumoBot</span><span class="r-entry-date">August 2024 – Present</span></div>
+          <div class="r-entry-sub">Active Member · Atlanta, GA</div>
+          <ul class="r-bullets">
+            <li>Designed, programmed, and manufactured a 500g competition robot with sub-millisecond control loops, a custom PCB, and an integrated sensor suite</li>
+            <li>Placed 3rd in competition across hundreds of live matches; created dozens of CAD models and fabricated parts from scratch</li>
+          </ul>
+        </div>
+
+        <div class="r-entry">
+          <div class="r-entry-top"><span class="r-entry-title">Georgia Tech Greyhat — Cybersecurity Club</span><span class="r-entry-date">August 2025 – Present</span></div>
+          <div class="r-entry-sub">Member · Atlanta, GA</div>
+          <ul class="r-bullets">
+            <li>Practiced binary analysis and reverse engineering using IDA Pro; attended workshops on web exploitation and penetration testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">✿ Emma Xuan · Computer Engineering @ Georgia Tech · 2027</p>
+    <div class="footer-links">
+      <a href="mailto:exuan7@gatech.edu">email</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">linkedin</a>
+      <a href="https://github.com/YOUR_GITHUB" target="_blank">github</a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
