@@ -186,7 +186,10 @@ section { padding: 5rem 0; }
   gap: 0.5rem; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.75rem;
   text-align: center; padding: 1rem;
 }
-.frame-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.frame-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
 .frame-ring {
   position: absolute; inset: -14px;
   border-radius: 42% 58% 52% 48% / 44% 48% 52% 56%;
@@ -270,10 +273,14 @@ section { padding: 5rem 0; }
   border-radius: 50% 50% 46% 54% / 40% 40% 60% 60%;
   overflow: hidden; background: var(--bg-soft);
   border: 2px solid var(--sage-mist); margin-bottom: 1.5rem;
+  position: relative;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 0.5rem; color: var(--text-muted); font-family: var(--font-mono); font-size: 0.72rem; text-align: center; padding: 1rem;
 }
-.about-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about-photo-frame img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
 .about-quick-info { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
 .about-quick-info li { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.85rem; color: var(--text-mid); font-weight: 300; }
 .qi-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 0.15rem; }
@@ -339,7 +346,7 @@ section { padding: 5rem 0; }
 
 /* ─── PAGE HERO ───────────────────────────── */
 .page-hero { padding: 4rem 0 3rem; border-bottom: 1px solid var(--border); margin-bottom: 0; }
-.page-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(3.5rem, 8vw, 6.5rem); letter-spacing: -0.01em; line-height: 0.95; color: var(--text); }
+.page-title { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.2rem, 5vw, 3.8rem); letter-spacing: -0.01em; line-height: 1.05; color: var(--text); }
 .page-title em { font-style: italic; color: var(--sage-mid); }
 
 /* ─── FOOTER ──────────────────────────────── */
